@@ -12,6 +12,7 @@ en:
     login: "Log In"
     signup: "Sign Up Now!"
     logo: "Rails Logo"
+    signuptitle: "Sign Up"
   para:
     tutorial: "Ruby on Rails Tutorial"
     home:
@@ -46,3 +47,6 @@ en:
       footer_p1: |
         The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
         by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    signup:
+      signup_site: |
+        Find me in app/views/users/new.html.erb
