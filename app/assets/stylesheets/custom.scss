@@ -1,9 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-$gray-light: #777;
+$gray: #777;
 $gray-medium-light: #eaeaea;
+$gray-light: #bbb;
+$red: #f00;
 $white: #fff;
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
 
 body {
   padding-top: 60px;
@@ -42,7 +48,7 @@ h1 {
 }
 
 h2 {
-  color: $gray-light;
+  color: $gray;
   font-size: 1.2em;
   font-weight: normal;
   letter-spacing: -1px;
@@ -73,7 +79,7 @@ p {
 
 footer {
   border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+  color: $gray;
   margin-top: 45px;
   padding-top: 5px;
 
@@ -97,5 +103,76 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+
+.debug-dump {
+  @include box-sizing;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+}
+
+aside {
+
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+
+    .user-info {
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar-edit {
+  margin-top: 15px;
+}
+
+input,
+textarea,
+select,
+.uneditable-input {
+  @include box-sizing;
+  border: 1px solid $gray-light;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto;
+}
+
+.error-explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
   }
 }

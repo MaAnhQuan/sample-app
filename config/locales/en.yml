@@ -1,6 +1,11 @@
 en:
   hello: "Hello world"
   news: "News"
+  confirm: "Confirmation"
+  create_acc: "Create my account"
+  formcontain: "The form contains "
+  err: "error"
+  nfound: "User not found."
   title:
     home: "Home"
     help: "Help"
