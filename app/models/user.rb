@@ -11,6 +11,18 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  class << self
+    def digest string
+      cost = ActiveModel::SecurePassword.min_cost
+      if cost
+        BCrypt::Engine::MIN_COST
+      else
+        BCrypt::Engine.cost
+      end
+      BCrypt::Password.create string, cost: min_cost
+    end
+  end
+
   private
 
   def downcase

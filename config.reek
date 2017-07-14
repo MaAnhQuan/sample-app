@@ -2,3 +2,5 @@ IrresponsibleModule:
   enabled: false
 FeatureEnvy:
   enabled: false
+TooManyStatements:
+  enabled: false
