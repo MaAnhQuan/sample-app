@@ -1,23 +1,8 @@
 <% provide :title, t("title.signuptitle") %>
+<% provide :button_text, t("create_acc") %>
 <h1><%= t "title.signup" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for @user do |form| %>
-      <%= render "shared/error_messages", errors: @user.errors %>
-
-      <%= form.label :name %>
-      <%= form.text_field :name, class: "form_control" %>
-
-      <%= form.label :email %>
-      <%= form.email_field :email, class: "form_control" %>
-
-      <%= form.label :password %>
-      <%= form.password_field :password, class: "form_control" %>
-
-      <%= form.label :password_confirmation, t("confirm") %>
-      <%= form.password_field :password_confirmation, class: "form_control" %>
-
-      <%= form.submit t("create_acc"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render "form", user: @user %>
   </div>
 </div>
