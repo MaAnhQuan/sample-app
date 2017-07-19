@@ -49,7 +49,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (7.1.2)
+    autoprefixer-rails (7.1.2.3)
       execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -60,6 +60,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     brakeman (3.7.0)
     builder (3.2.3)
     bundler-audit (0.5.0)
@@ -88,10 +90,12 @@ GEM
     equalizer (0.0.11)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    i18n (0.8.4)
+    i18n (0.8.6)
     ice_nine (0.11.2)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -205,7 +209,7 @@ GEM
     rubocop-checkstyle_formatter (0.4.0)
       rubocop (>= 0.35.1)
     ruby-progressbar (1.8.1)
-    sass (3.4.24)
+    sass (3.4.25)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -216,7 +220,7 @@ GEM
       rake (>= 0.9, < 13)
       sass (~> 3.4.20)
     scss_lint_reporter_checkstyle (0.2.0)
-    sexp_processor (4.9.0)
+    sexp_processor (4.10.0)
     simplecov (0.14.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -259,6 +263,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.5)
 
 PLATFORMS
   ruby
@@ -266,11 +271,13 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.11)
   bootstrap-sass (= 3.3.7)
+  bootstrap-will_paginate (= 1.0.0)
   brakeman
   bundler-audit
   byebug
   coffee-rails (~> 4.2)
   eslint-rails!
+  faker (= 1.7.3)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
@@ -295,6 +302,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate (= 3.1.5)
 
 BUNDLED WITH
    1.15.1

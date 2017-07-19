@@ -5,7 +5,7 @@ en:
   create_acc: "Create my account"
   formcontain: "The form contains "
   err: "error"
-  nfound: "User not found."
+  user_not_found: "User not found."
   newuser: "New user?"
   login_error: "Invalid email/password combination"
   remember: "Remember me on this device"
@@ -14,6 +14,14 @@ en:
   profile: "Profile"
   settings: "Settings"
   logout: "Log Out"
+  update_user: "Update your profile"
+  save_user: "Save changes"
+  change: "change"
+  pls_login: "Please log in."
+  update_success: "Profile updated"
+  delete: "Delete"
+  u_sure: "You sure?"
+  user_del_success: "User deleted"
   title:
     home: "Home"
     help: "Help"
@@ -26,6 +34,8 @@ en:
     signup: "Sign Up Now!"
     logo: "Rails Logo"
     signuptitle: "Sign Up"
+    edit_user: "Edit user"
+    all_user: "All users"
   para:
     tutorial: "Ruby on Rails Tutorial"
     home:
