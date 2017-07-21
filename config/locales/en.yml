@@ -1,5 +1,6 @@
 en:
   hello: "Hello world"
+  hi: "Hi"
   news: "News"
   confirm: "Confirmation"
   create_acc: "Create my account"
@@ -22,6 +23,15 @@ en:
   delete: "Delete"
   u_sure: "You sure?"
   user_del_success: "User deleted"
+  acc_active: "Account Activation"
+  pls_check_activation: "Please check your email to activate your account."
+  acc_activated: "Account activated."
+  invalid_activation: "Invalid activation link"
+  acc_not_activated: "Account not activated. Check your email for the activation link."
+  click_to_activate: "! Click on the link below to activate your account:"
+  activate: "Activate"
+  reset_pass: "Reset password"
+  find_reset_pass: "find me in app/views/user_mailer/password_reset.text.erb"
   title:
     home: "Home"
     help: "Help"

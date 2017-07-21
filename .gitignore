@@ -28,3 +28,4 @@ config/environments/*.local.yml
 /.framgia-ci-reports
 .framgia-ci-result.temp.yml
 .byebug_history
+config/local_env.yml
