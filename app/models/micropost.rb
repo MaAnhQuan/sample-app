@@ -2,7 +2,11 @@ class Micropost < ApplicationRecord
   belongs_to :user
 
   scope :order_desc, ->{order created_at: :desc}
-  scope :where_id, ->(id){where "user_id = ?", id}
+  find_feed_item = lambda do |id|
+    where "user_id IN (SELECT followed_id FROM relationships
+      WHERE follower_id = #{id}) OR user_id = #{id}"
+  end
+  scope :find_feed_item, find_feed_item
 
   mount_uploader :picture, PictureUploader
 
