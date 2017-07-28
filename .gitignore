@@ -23,9 +23,11 @@ pickle-email-*.html
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+config/settings/*.yml
 .DS_Store
 /.idea
 /.framgia-ci-reports
 .framgia-ci-result.temp.yml
 .byebug_history
 config/local_env.yml
+/public/javascripts
