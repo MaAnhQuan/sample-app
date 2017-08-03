@@ -33,7 +33,7 @@ class PasswordResetsController < ApplicationController
 
   def create_success user
     user.create_reset_digest
-    user.send_password_reset_email
+    user.send_email :password_reset
     flash[:info] = t "reset_pass_email_sent"
     redirect_to root_url
   end
